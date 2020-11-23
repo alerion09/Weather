@@ -45,7 +45,7 @@ function appStart()
         let date = document.querySelector(".date");
         let currentDate = new Date();
         let day = currentDate.getDate();
-        let month = currentDate.getMonth();
+        let month = currentDate.getMonth()+1;
         let year = currentDate.getUTCFullYear();
 
         date.innerText = day + "/" + month + "/" + year;
