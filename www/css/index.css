@@ -78,6 +78,38 @@ header
     height: 100%;
     background-color: rgba(255, 255, 255, 0.300);
     border-radius: 0 15px 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.upper-arrow
+{
+    height: 70%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow
+{
+    border-top: 3px solid rgba(255, 255, 255, 0.712);
+    border-left: 3px solid rgb(255, 255, 255, 0.712);
+    width: 13px;
+    height: 13px;
+    transform: rotate(135deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+.arrow::after
+{
+    content: "";
+    display: block;
+    width:3px;
+    height:18px;
+    background-color: rgb(255, 255, 255, 0.712);
+    transform: rotate(-45deg) translate(5px,1px);
+    
+    
 }
 ::placeholder
 {
