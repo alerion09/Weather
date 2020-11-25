@@ -48,7 +48,7 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 70%;
     margin-bottom: 5%;
 }
 .container
@@ -64,13 +64,20 @@ header
 {   
     border-style: none;
     background-color: rgba(190, 190, 190, 0.301);
-    border-radius: 15px;
-    width: 100%;
+    border-radius: 15px 0 0 15px;
+    width: 80%;
     padding:10px;
     font-size: 1.3rem;
     outline:none;
     border:none;
     color: white;
+}
+.arrow-div
+{
+    width: 20%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.300);
+    border-radius: 0 15px 15px 0;
 }
 ::placeholder
 {
