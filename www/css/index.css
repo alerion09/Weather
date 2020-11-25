@@ -16,6 +16,8 @@
 html
 {
     font-size: 62,5%;
+    width: 100%;
+    height: 100%;
 }
 body
 {   
@@ -24,17 +26,22 @@ body
     background-size: cover;
     background-position: top center;
     color: white;
+    width: 100%;
+    height: 100%;
 }
 main
 {
     width: 100%;
+    height: 100%;
 }
 section
 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.418);
+    height: 25%;
 }
 header
 {
@@ -42,6 +49,7 @@ header
     justify-content: center;
     align-items: center;
     width: 60%;
+    margin-bottom: 5%;
 }
 .container
 {   
@@ -50,6 +58,7 @@ header
     padding-top: 20%;
     align-items: center;
     width: 100%;
+    height: 100%;
 }
 .input-city
 {   
@@ -71,21 +80,54 @@ header
 {     
     font-family: "OpenSansBold";
     font-size: 1.3rem;
-    margin-top: 15%;
 }
 .date
 {   
     margin-top: 5%;
-    margin-bottom: 15%;
 }
 .temperature
 {
     font-family: "OpenSansBold";
     font-size: 2rem;
-    margin-bottom: 15%;
 }
 .range
 {
     margin-top: 5%;
 }
-/*test comment*/
+/*---------------------------RESPONSIVE-CSS-----------------------*/
+/*--------------SMARTPHONES-------------*/
+@media only screen and ( min-width: 321px) and (orientation: portrait)
+{   
+    html
+    {
+        font-size: 1.1rem;
+    }
+}
+@media only screen and (min-width: 400px) and (orientation: portrait)
+{
+    html
+    {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (min-width: 600px) and (orientation: portrait)
+{
+    html
+    {
+        font-size: 1.4rem;
+    }
+}
+@media only screen and (min-width: 800px) and (orientation: portrait)
+{
+    html
+    {
+        font-size: 1.6rem;
+    }
+}
+@media only screen and (min-width: 1000px) and (orientation: portrait)
+{
+    html
+    {
+        font-size: 1.8rem;
+    }
+}
