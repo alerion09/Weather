@@ -10,13 +10,13 @@ function appStart()
             url: "https://api.openweathermap.org/data/2.5/"
         }
     const inputCity = document.querySelector(".input-city");
-    const arrowDiv = document.querySelector(".arrow-div");
-    arrowDiv.addEventListener('click', runQuery);
-
+    inputCity.addEventListener('keypress', runQuery);
     function runQuery(event)
     {
+        if (event.keyCode == 13)
+        {
             getResults(inputCity.value);
-            console.log(inputCity.value);
+        }
     }
 
     function getResults(text)
