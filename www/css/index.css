@@ -29,7 +29,9 @@ body
     color: white;
 }
 main
-{
+{   
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 65%;
 }
@@ -50,8 +52,6 @@ header
     width: 70%;
     height: 15%;
     margin-top: 10%;
-    
-    
 }
 .container
 {   
@@ -91,7 +91,7 @@ header
 .temperature
 {
     font-family: "OpenSansBold";
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 .range
 {
@@ -132,5 +132,60 @@ header
     html
     {
         font-size: 1.8rem;
+    }
+}
+/*--------------LANDSCAPE-------------*/
+@media only screen and (min-width: 400px) and (orientation: landscape)
+{   
+    body
+    {   
+        background-image: url(../img/mountain2.jpg);     
+        background-position: bottom;
+        background-repeat: no-repeat;
+    }
+    header
+    {
+        margin-top: 3%;
+        height: 25%;
+        margin-bottom: 3%;
+    }
+    main
+    {
+        flex-direction: row;
+        justify-content: center;
+    }
+    section
+    {
+        width: 30%;
+    }
+    .input-city
+    {
+        width:60%;
+    }
+}
+@media only screen and (min-width: 700px) and (min-height: 500px) and (orientation: landscape)
+{
+    html
+    {
+        font-size: 1.2rem;
+    }
+    header
+    {
+        height: 20%;
+        margin-bottom: 10%;
+    }
+}
+@media only screen and (min-width: 900px) and (orientation: landscape)
+{
+    html
+    {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (min-width: 1200px) and (orientation: landscape)
+{
+    html
+    {
+        font-size: 2rem;
     }
 }
