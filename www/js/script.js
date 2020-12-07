@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", appStart)
-
 //FUNKCJA STARTOWA ................................................................................
 function appStart()
 {   
@@ -18,7 +17,6 @@ function appStart()
             getResults(inputCity.value);
         }
     }
-
     function getResults(text)
     {
         fetch(weatherApi.url+"weather?q="+text+"&units=metric&APPID="+weatherApi.key)
@@ -27,26 +25,31 @@ function appStart()
                 return data.json();
             }).then(displayResults);
     }
-
     function displayResults(data)
     {
         console.log(data);
-        let city = document.querySelector(".city");
+        const city = document.querySelector(".city");
+        const temperature = document.querySelector(".temperature");
+        const state = document.querySelector(".state");
+        const range = document.querySelector(".range");
         city.innerText = data.name+", "+data.sys.country;
-        let temperature = document.querySelector(".temperature");
         temperature.innerText = Math.round(data.main.temp) + "\u00B0"+"C";
-        let state = document.querySelector(".state");
         state.innerText = data.weather[0].main;
-        let range = document.querySelector(".range");
         range.innerText = Math.round(data.main.temp_min) + "\u00B0"+"C / " + Math.round(data.main.temp_max) + "\u00B0"+"C";
        
-        let date = document.querySelector(".date");
+        const date = document.querySelector(".date");
         let currentDate = new Date();
         let day = currentDate.getDate();
         let month = currentDate.getMonth()+1;
         let year = currentDate.getUTCFullYear();
 
-        date.innerText = day + "/" + month + "/" + year;
+        if (day < 10)
+        {
+            date.innerText = "0" + day + "/" + month + "/" + year;
+        }else
+        {
+            date.innerText = day + "/" + month + "/" + year;
+        }
     }
 }
 
