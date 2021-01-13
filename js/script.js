@@ -12,7 +12,7 @@ function appStart()
     inputCity.addEventListener('keypress', runQuery);
     function runQuery(event)
     {
-        if (event.keyCode == 13)
+        if (event.keyCode === 13)
         {
             getResults(inputCity.value);
         }
