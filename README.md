@@ -7,18 +7,18 @@ Created using HTML, CSS, JavaScript, Weather API.
 Iphone 5 screenshot.
 <br />
 <br />
-![iphone5](www/screenshots/iphone5.png)
+![iphone5](screenshots/iphone5.png)
 <br />
 <br />
 <br />
 Iphone X screenshot.
 <br />
 <br />
-![iphonex](www/screenshots/iphonex.png)
+![iphonex](screenshots/iphonex.png)
 <br />
 <br />
 <br />
 Iphone 8 landscape screenshot.
 <br />
 <br />
-![landscape](www/screenshots/landscape.png)
+![landscape](screenshots/landscape.png)
