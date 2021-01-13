@@ -63,7 +63,7 @@ header
 }
 .input-city
 {   
-    border-style: none;
+    /* border-style: none;
     background-color: rgba(190, 190, 190, 0.301);
     border-radius: 15px;
     width: 80%;
@@ -73,7 +73,7 @@ header
     border:none;
     color: white;
     height: 50%;
-    text-decoration: none;
+    text-decoration: none; */
 }
 ::placeholder
 {
