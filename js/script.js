@@ -2,10 +2,6 @@ document.addEventListener("DOMContentLoaded", appStart)
 //FUNKCJA STARTOWA ................................................................................
 function appStart()
 {   
-
-    setPixelSize();
-
-
     const myApiKey = config.MY_KEY;
     const weatherApi =
         {
@@ -54,15 +50,6 @@ function appStart()
         {
             date.innerText = day + "/" + month + "/" + year;
         }
-    }
-    function setPixelSize()
-    {
-        const screenWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-        const screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-        
-        const tagBody = document.body;
-        tagBody.style.width = screenWidth;
-        tagBody.style.height = screenHeight;
     }
 }
 
