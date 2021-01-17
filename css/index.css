@@ -23,11 +23,8 @@ body
 {   
     height: 100%;
     font-family: "OpenSans";
-    background-image: url(../img/mountain.jpg);
-    background-repeat: no-repeat;
-    -webkit-background-size:cover;
+    background: url(../img/mountain.jpg) no-repeat center top fixed;
     background-size: cover;
-    background-position: top center;
     color: white;
 }
 main
