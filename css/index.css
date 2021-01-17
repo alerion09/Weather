@@ -24,6 +24,7 @@ body
     height: 100%;
     font-family: "OpenSans";
     background-image: url(../img/mountain.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
     color: white;
