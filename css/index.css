@@ -162,6 +162,13 @@ header
         width:60%;
     }
 }
+@media only screen and (max-height: 289px) and (orientation: landscape)
+{
+    body
+    {   
+        background-position: top;
+    }
+}
 @media only screen and (min-width: 700px) and (min-height: 500px) and (orientation: landscape)
 {
     html
@@ -200,12 +207,5 @@ header
     html
     {
         font-size: 2.3rem;
-    }
-}
-@media only screen and (min-height: 300px) and (orientation: landscape)
-{
-    body
-    {   
-        background-position: top;
     }
 }
