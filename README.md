@@ -1,7 +1,7 @@
 # Weather
 Weather app, full responsive for mobile devices.
 <br />
-Created using HTML, CSS, JavaScript, Weather API.
+Used technology: HTML5, CSS3, JavaScript, Weather API.
 <br />
 <br />
 Iphone 5 screenshot.
